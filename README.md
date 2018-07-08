@@ -35,7 +35,7 @@ https://cyberphone.github.io/doc/research/nfc-based-qr-replacement2.pdf
 Note: this proposal outlines a pure _Security Protocol_ which means that it presumes that the software running in Servers, PCs and Phones is operating correctly.
 
 ## Attack Vectors and their Mitigation
-The following analyses may indeed be incorrect.  This is why I have requested a security review 😀.
+The following analysis may indeed be incorrect.  This is why I have requested a security review 😀.
 
 ### Intercepting NFC
 Intercepting NFC over quite long distances have been reported as feasible.
