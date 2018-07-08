@@ -37,11 +37,11 @@ Note: this proposal outlines a pure _Security Protocol_ which means that it pres
 ## Attack Vectors and their Mitigation
 The following analyses may indeed be incorrect.  This is why I have requested a security review 😀.
 
-# Intercepting NFC
+### Intercepting NFC
 Intercepting NFC over quite long distances have been reported as feasible.
 However, the only thing it buys you is stealing the user's login attempt, not the login itself.
 
-# Phishing
+### Phishing
 The user clicks on a Web link received in an email or chat, or is encountered on a Web site.
 The link opens a malicious Web site ("yourbank.business.f6s4f.com") typically masquerading as a bank or similar.
 The user is encouraged logging in.  Before showing the NFC symbol in a Web page, the malicious site calls the target site in order to get the required NFC data.  Then malicious site creates a Web page calling NFC with the received data.
@@ -51,11 +51,11 @@ user have another host than the target site.  See point \#4 in the Architectural
 If a malicious site rather tries to _reuse_ an authentic login to itself at another site, the check performed at \#10.1
 in the Architectural Overview should thwart such efforts even if the session information is correct.
 
-# Social Engineering Scams
+### Social Engineering Scams
 There is (AFAICT) no way a person calling you on the phone, asking you to login somewhere,
 could take or reuse that login.
 
-# Unresolved: Dynamic NFC Data R/W
+### Unresolved: Dynamic NFC Data R/W
 The most sophisticated attack I have come up with so far requires the attacker to:
 1. Create a session with the target site
 2. Intercept and rewrite NFC data on the fly by replacing the user's URL with the attacker's URL
