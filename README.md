@@ -1,4 +1,4 @@
-# "A Better QR"
+# “A Better QR”
 ![betterqr](https://cloud.githubusercontent.com/assets/8044211/26782217/c320c982-49f2-11e7-90ac-348677374ba3.png)
 
 ## Background
@@ -28,3 +28,20 @@ It is correct that _integrated NFC support_ in PCs is quite uncommon.  OTOH, why
 
 Although the latter is not a part of this proposal, it is related since the idea is that somewhere down the line, you should be
 able to use the same payment protocols in physical shops as on-line.
+
+## Architectural Overwiew
+https://cyberphone.github.io/doc/research/nfc-based-qr-replacement2.pdf
+
+Note: this proposal outlines a pure _security protocol_ which means that it presumes that the software running in Servers, PCs and Phones is operating correctly.
+
+## Attack Vectors and their Mitigation
+The following analyses may indeed be incorrect.  This is why I have requested a security review 😀.
+
+# Phishing
+The user clicks on a Web link received in an email or chat, or is encountered on a Web site.
+The link opens a malicious Web site ("yourbank.business.f6s4f.com") typically masquerading as a bank or similar.
+The user is encouraged logging in.  Before showing the NFC symbol in a Web page, the malicious site calls the target site in order to get the required NFC data.  Then malicious site creates a Web page calling NFC with the received data.
+Unfortunately (for the attacker) the NFC driver will not produce any output since the Web page displayed to the
+user have another host than the target site.  See point \#4 in the Architectural Overwiew.
+
+If the malicious site rather tries to reuse an authentic login to itself at another site
