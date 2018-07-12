@@ -31,7 +31,7 @@ Although the latter is not a part of this proposal, it is related since the idea
 possible using the same payment protocols in physical shops as on-line.  NFC would in such a use case only be used to setup the
 communication channel while the actual payment protocol would use HTTP or WebSocket.
 
-![united](https://user-images.githubusercontent.com/8044211/42657851-c90c0b0e-8623-11e8-9661-6e56d5c566c2.png)
+![united](https://user-images.githubusercontent.com/8044211/42658199-f1203592-8624-11e8-98e1-b127daaf6184.png)
 
 ## Architectural Overview
 https://cyberphone.github.io/doc/research/nfc-based-qr-replacement2.pdf
