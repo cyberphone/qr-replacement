@@ -26,9 +26,12 @@ This repository contains a proposal for a _Dedicated_, _Write-only_ Web-invoked 
 ## NFC in PCs
 It is correct that _integrated NFC support_ in PCs is quite uncommon.  OTOH, why would vendors maintain support for NFC if it doesn't have any important task to fulfill?  Unfortunately NFC has in spite of nice characteristics, gotten serious competition from QR even for payments in physical shops.
 
+## Possible "Side Effects"
 Although the latter is not a part of this proposal, it is related since the idea is that somewhere down the line, it should be
 possible using the same payment protocols in physical shops as on-line.  NFC would in such a use case only be used to setup the
 communication channel while the actual payment protocol would use HTTP or WebSocket.
+
+![united](https://user-images.githubusercontent.com/8044211/42657851-c90c0b0e-8623-11e8-9661-6e56d5c566c2.png)
 
 ## Architectural Overview
 https://cyberphone.github.io/doc/research/nfc-based-qr-replacement2.pdf
