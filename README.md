@@ -32,6 +32,8 @@ possible using the same payment protocols in physical shops as on-line.  NFC wou
 communication channel while the actual payment protocol would use HTTP or WebSocket.
 
 ![united](https://user-images.githubusercontent.com/8044211/42658603-1bf6c870-8626-11e8-95b5-a6d7cc444f4c.png)
+In such a setup there is no need for a traditional payment terminal since the entire client side of the
+UI and security is catered for by the mobile device.
 
 ## Architectural Overview
 https://cyberphone.github.io/doc/research/nfc-based-qr-replacement2.pdf
