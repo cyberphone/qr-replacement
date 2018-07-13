@@ -24,7 +24,7 @@ This is how most QR based schemes work today:
 This repository contains a proposal for a _Dedicated_, _Write-only_ Web-invoked NFC system intended as a replacement for inconvenient and security-broken QR schemes. The primary applications are authentication and payments.
 
 ## NFC in PCs
-It is correct that _integrated NFC support_ in PCs is quite uncommon.  OTOH, why would vendors maintain support for NFC if it doesn't have any important task to fulfill?  Unfortunately NFC has in spite of nice characteristics, gotten serious competition from QR even for payments in physical shops.
+It is correct that _integrated NFC support_ in PCs is quite uncommon.  OTOH, why would vendors maintain support for NFC if it doesn't have any important task to perform?  Unfortunately NFC has in spite of nice characteristics, gotten serious competition from QR even for payments in physical shops.
 
 ## Possible "Side Effects"
 Although the latter is not a part of this proposal, it is related since the idea is that somewhere down the line, it should be
