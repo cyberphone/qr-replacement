@@ -51,15 +51,15 @@ However, the only thing it buys you is stealing the user's login attempt, not th
 
 ### Phishing
 The user clicks on a Web link received in an email or chat, or is encountered on a Web site.
-The link opens a malicious Web site `yourbank.business.f6s4f.com` typically masquerading as a bank or similar.
+The link opens a malicious Web site like `yourbank.business.f6s4f.com` typically masquerading as a bank or similar.
 The user is encouraged logging in.  Before responding to the user with an NFC-using Web page,
 the malicious site calls the target site in order to start a session of its own.
 Then the malicious site returns a Web page for the user calling NFC with the received data.
 Unfortunately (for the attacker) the NFC driver will not produce any output since the Web page displayed to the
-user has another host than the target site.  See point \#4 in the Architectural Overview.
+user has another host than the target site.  See point \#4 in the [architectural overview](#architectural-overview).
 
 If a malicious site rather tries to _reuse_ an authentic login to itself at another site, the check performed at \#10.1
-in the Architectural Overview should thwart such efforts even if the session information is correct.
+in the [architectural overview](#architectural-overview) should thwart such efforts even if the session information is correct.
 
 ### Social Engineering Scams
 There is (AFAICT) no way a person calling you on the phone, asking you to login somewhere,
