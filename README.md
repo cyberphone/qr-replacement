@@ -34,8 +34,8 @@ NFC would in such a use case only be used to setup the
 communication channel while the actual payment protocol would use HTTP or WebSocket.
 
 ![united](https://user-images.githubusercontent.com/8044211/42658603-1bf6c870-8626-11e8-95b5-a6d7cc444f4c.png)
-In such a setup there is no need for a traditional payment terminal since the entire client side of the
-UI and security is catered for by the mobile device.
+In such a setup there is _no need for a traditional payment terminal since the entire client side of the
+UI and security is catered for by the mobile device_.
 
 ## Architectural Overview
 https://cyberphone.github.io/doc/research/nfc-based-qr-replacement2.pdf
@@ -86,5 +86,5 @@ icon.
 
 A component that does require specific security measures is the mobile device.
 However, these are application specific.  For an authentication scheme like
-shown in the Architectural Overview, an alert message `"this is your first login to 'xyz.com', do you want to continue"`
+shown in the [architectural overview](#architectural-overview), an alert message `"this is your first login to 'xyz.com', do you want to continue"`
 seems appropriate.
