@@ -37,6 +37,8 @@ communication channel while the actual payment protocol would use HTTP or WebSoc
 In such a setup there is _no need for a traditional payment terminal since the entire client side of the
 UI and security is catered for by the mobile device_.
 
+The [Saturn](https://github.com/cyberphone/saturn) payment authorization scheme is designed to take advantage of such a possibility.
+
 ## Architectural Overview
 https://cyberphone.github.io/doc/research/nfc-based-qr-replacement2.pdf
 
