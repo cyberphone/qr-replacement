@@ -8,7 +8,7 @@ There is essentially only one but rather obvious snag; you need to start a speci
 
 However, if you scratch a bit under the surface of these systems you will find that they suffer from a fairly ugly security flaw as well: _There is no secure binding between the page showing the QR-code and the QR-code itself_. This fact has been successfully exploited by criminals who with simple phishing scams have lured people logging in to their bank for "Important Information" giving the phisher access to the account rather than the user. There is currently no publicly documented workaround for this vulnerability.
 
-Some systems only use a short identification rather than QR-code making them susceptible to "Social Engineering" scams over the phone.
+Some systems only use a short identifier rather than a QR-code making them susceptible to "Social Engineering" scams over the phone as well.
 
 Note: even the most advanced systems out there using _Security Elements_ and _Asymmetric Key Cryptography_ exhibit these problems.
 
