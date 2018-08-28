@@ -58,7 +58,7 @@ The user is encouraged logging in.  Before responding to the user with an NFC-us
 the malicious site calls the target site in order to start a session of its own.
 Then the malicious site returns a Web page for the user calling NFC with the received data.
 Unfortunately (for the attacker) the NFC driver will not produce any output since the Web page displayed to the
-user has another host than the target site.  See point \#4 in the [architectural overview](#architectural-overview).
+user has another host than the target site.  See step \#4 in the [architectural overview](#architectural-overview).
 
 If a malicious site rather tries to _reuse_ an authentic login to itself at another site, the check performed at \#10.1
 in the [architectural overview](#architectural-overview) should thwart such efforts even if the session information is correct.
@@ -70,10 +70,12 @@ could take or reuse that login.
 ### Unresolved: Dynamic NFC Data R/W
 The most sophisticated attack I have come up with so far requires the attacker to:
 1. Create a session with the target site
-2. Intercept and rewrite NFC data on the fly by replacing the user's URL with the attacker's URL
+2. Intercept and rewrite NFC RF data (see step \#7 in the [architectural overview](#architectural-overview)),
+on the fly by replacing the user's URL with the attacker's URL
 
 There doesn't seem to be any real mitigation to this attack.  OTOH, it seems quite
-complex to succeed with. If we are talking public computers, hacking the browser would
+complex to succeed with, requiring special radio equipment
+presumably mounted on the PC itself. If we are talking public computers, hacking the browser would
 be a much more workable solution since it defeats pretty much all security solutions!
 
 ## Security Considerations
