@@ -47,13 +47,15 @@ Note: this proposal outlines a pure _Security Protocol_ which means that it pres
 ## Attack Vectors and their Mitigation
 The following analysis may indeed be incorrect.  This is why I have requested a security review 😀.
 
+Note: https to a (by the browser) trusted site is a prerequisite for enabling the NFC API.
+
 ### Intercepting NFC
 Intercepting NFC over quite long distances has been reported as feasible.
 However, the only thing it buys you is stealing the user's login attempt, not the login itself.
 
 ### Phishing
 The user clicks on a Web link received in an email or chat, or is encountered on a Web site.
-The link opens a malicious Web site like `yourbank.business.f6s4f.com` typically masquerading as a bank or similar.
+The link opens a malicious Web site like `https://yourbank.business.f6s4f.com` typically masquerading as a bank or similar.
 The user is encouraged logging in.  Before responding to the user with an NFC-using Web page,
 the malicious site calls the target site in order to start a session of its own.
 Then the malicious site returns a Web page for the user calling NFC with the received data.
